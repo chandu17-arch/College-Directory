@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Anupama Bhatta">
+    <meta name="description" content="Wesleyan College Directory">
+    <title>Wesleyan College Directory</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/fonts/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="icon" href="images/wesleyan-favicon.png">
+</head>
+
+
+<body>
+
+    <div class="modal fade" id="inputForm" tabindex="-1" role="dialog" aria-labelledby="inputForm" aria-hidden="true">
+        <form id="myForm" name="myForm">
+
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Add New Directory Listing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <input type="hidden" value="" id="hidListingId">
+
+                        <div class="form-group">
+                            <label for="txtName">Name: </label>
+                            <input id="txtName" name="txtName" type="text" class="form-control" size="10" required="" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtTitle">Title: </label>
+                            <input id="txtTitle" name="txtTitle" type="text" class="form-control" required="" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPhone">Phone: </label>
+                            <input id="txtPhone" name="txtPhone" type="text" class="form-control" required="" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail">Email: </label>
+                            <input id="txtEmail" name="txtEmail" type="email" class="form-control" required="" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtWebsite">Website: </label>
+                            <input id="txtWebsite" name="txtWebsite" type="text" class="form-control"
+                                style="max-width: 600px;" value="">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="btnSave" class="btn btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="directory-bg">
+        <div class="controls row">
+            <div class="col-sm-12 col-md-2 add-new-container">
+                <button id="btnAddNewListingForm" type="button" class="btn btn-sm btn-light" title="Add New Listing">
+                    <i class="far fa-calendar-plus"> New</i>
+                </button>
+            </div>
+            <div class="sort-controls col-sm-12 col-md-10">
+                <label for="sort-buttons">Sort by: </label>
+                <div id="sort-buttons" class="sort-buttons">
+                    <button type="button" id="btnSortByName" class="btn btn-sm btn-light"
+                        title="Sort by name in descending order">
+                        <span class="descending"> Name</span>
+                    </button>
+                    <button type="button" id="btnSortByTitle" class="btn btn-sm btn-light"
+                        title="Sort by title in descending order">
+                        <span class="descending"> Title</span>
+                    </button>
+                    <button type="button" id="btnSortByPhone" class="btn btn-sm btn-light"
+                        title="Sort by phone in descending order">
+                        <span class="descending"> Phone</span>
+                    </button>
+                    <button type="button" id="btnSortByEmail" class="btn btn-sm btn-light"
+                        title="Sort by email in descending order">
+                        <span class="descending"> Email</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <h1><span>Wesleyan College </span>Directory</h1>
+        <div id="directory-listing" class="container">
+            <div id="directory-listing-row" class="row directory-row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 listing">
+                    <!-- <div class="listing-item-parent-container">
+                        <h2></h2>
+                        <div class="listing-details">
+                            <span class="item position"></span>
+                            <span class="item phone"></span>
+                            <span class="item email"></span>
+                            <span class="item website"></span>
+                        </div>
+                        <div class="edit-controls">
+                            <i class="far fa-trash-alt"></i>
+                            <i class="far fa-edit"></i>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/Directory.js"></script>
+    <script src="scripts/Listing.js"></script>
+    <script src="scripts/populate-directory.js"></script>
+    <script src="scripts/function.js"></script>
+</body>
+
+</html>

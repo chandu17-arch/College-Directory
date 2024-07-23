@@ -1,0 +1,256 @@
+@font-face {
+    font-family: work_sans_lightregular;
+    src: url(fonts/worksans-light-webfont.eot);
+    src: url(fonts/worksans-light-webfont.svg);
+    src: url(fonts/worksans-light-webfont.ttf);
+    src: url(fonts/worksans-light-webfont.woff);
+    src: url(fonts/worksans-light-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: work_sans_mediumregular;
+    src: url(fonts/worksans-medium-webfont.eot);
+    src: url(fonts/worksans-medium-webfont.svg);
+    src: url(fonts/worksans-medium-webfont.ttf);
+    src: url(fonts/worksans-medium-webfont.woff);
+    src: url(fonts/worksans-medium-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: work_sansregular;
+    src: url(fonts/worksans-regular-webfont.eot);
+    src: url(fonts/worksans-regular-webfont.svg);
+    src: url(fonts/worksans-regular-webfont.ttf);
+    src: url(fonts/worksans-regular-webfont.woff);
+    src: url(fonts/worksans-regular-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'work_sansregular' !important;
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'work_sansregular';
+    font-weight: bolder;
+    color:#fefefe;
+    width: 100%;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+h1 > span{
+    font-family: 'work_sans_lightregular';
+}
+
+h2, h3,h4, h5, h6 {
+    font-family: 'work_sansregular';
+    color:#70478c;
+    width: 100%
+}
+
+a, a:visited {
+    color:#70478c !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+a:focus, a:hover {
+    color: #ce2140;
+    text-decoration: none;
+    outline: 0 none;
+}
+
+/*******END GLOBAL SELECTORS*******/
+
+
+.directory-bg {
+    background: #000 url(../images/directory-bg.png) 0 0 repeat;
+    background-size: cover;
+    height: 100%;;
+    width: 100%;
+    min-height: 980px;
+    padding: 20px;
+}
+
+.modal-dialog{
+    min-width: 50px;
+}
+
+.form-group label{
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.form-group input {
+    display: inline-block !important;
+    width: 170px;
+    /* max-width: 37%; */
+}
+
+.modal-header h5 span, h1 span {
+    font-family: 'work_sans_lightregular';
+}
+
+.directory-row {
+    width: 100%;
+}
+
+.directory-row > div {
+    padding: 5px;
+}
+
+#directory-listing {
+    max-width: 2000px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.controls {
+    padding: 20px;
+    margin: 0;
+}
+
+.controls.row > div {
+    padding-top: 10px;
+}
+
+.sort-controls label {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.sort-buttons {
+    display: inline-block;
+}  
+
+.ascending:before {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+    content: "\f882";
+}
+
+.descending:before{
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900; 
+    content: "\f881";
+}
+ 
+.sort-controls label{
+    color:#fefefe;
+}
+
+.btn-info {
+    color: black !important;
+    background-color: white !important;
+}
+
+.btn{
+    display:inline;
+    font-family: 'work_sansregular';
+}
+
+.container{
+    width: 100%;
+    max-width: 1900px;
+}
+
+.sort-buttons{
+    display: inline;
+}
+
+.listing-item-parent-container{
+    background-color: white;
+    min-height: 200px;
+    padding: 20px;
+    position: relative;
+    margin: 5px;
+}
+
+.listing-item-parent-container h2{
+    font-family: 'work_sansregular';
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+}
+
+.listing-details span{
+    display: block;
+}
+
+.listing-details{
+    position: absolute;
+    bottom: 30px;
+}
+
+.listing-details .position:before{
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+    content: "\f007";
+    margin-right: 5px; 
+}
+
+.listing-details .phone:before{
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+    content: "\f879";
+    margin-right: 5px;
+}
+
+.listing-details .email:before{
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+    content: "\f2b6";
+    margin-right: 5px; 
+}
+
+.listing-details .website:before{
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+    content: "\f35d";
+    margin-right: 5px; 
+}
+
+.edit-controls {
+    position: absolute;
+    bottom: 8px;
+    right: 0px;
+    display: inline-block;
+    width: 50px;
+}
+
+.edit-controls i {
+    color: #cccccc;
+}
+
+.edit-controls i:hover {
+    color: #70478c;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+label.error {
+    margin-left: 10px;
+    display: inline-block;
+    padding: 5px;
+}
+
+label.error, input:invalid:focus, .error {
+    display: inline-block;
+    background: rgba(255, 0, 0, 0.075) !important;
+    border: red solid thin !important;
+    color: darkred;
+}
